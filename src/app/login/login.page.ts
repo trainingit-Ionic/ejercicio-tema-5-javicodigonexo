@@ -4,7 +4,7 @@ import { NavParams } from '@ionic/angular';
 @Component({
   selector: 'app-login',
 })
-export class LoginPage implements OnInit {
+export class LoginPage{
 
    @Input() value: number;
 

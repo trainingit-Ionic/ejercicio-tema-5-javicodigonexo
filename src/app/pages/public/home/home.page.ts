@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { ModalController } from '@ionic/angular';
 import { MenuController } from '@ionic/angular';
 import { AuthService } from '../../../services/auth.service';
 import { ToastController } from '@ionic/angular';
@@ -11,7 +10,8 @@ import { LoadingController } from '@ionic/angular';
   styleUrls: ['home.page.scss']
 })
 export class HomePage {
-
+    user:string = null;
+    pass:string = null;
     constructor(private menu: MenuController, public toastController: ToastController, public auth: AuthService, public loadingController: LoadingController)	{}
 
     async openFirst() {
